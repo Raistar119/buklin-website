@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>БУКЛИН | Audi RS6 Legend</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="matrix-bg"></div>
+    <div class="floating-elements">
+        <div class="floating-rs6">🚗</div>
+        <div class="floating-watermelon">🍉</div>
+        <div class="floating-money">💸</div>
+        <div class="floating-diamond">💎</div>
+        <div class="floating-fire">🔥</div>
+    </div>
+
+    <!-- Аудио элементы -->
+    <audio id="engineSound" src="https://assets.mixkit.co/sfx/preview/mixkit-sports-car-accelerating-1611.mp3" preload="auto"></audio>
+    <audio id="backgroundMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Главный экран -->
+    <header class="hero-section">
+        <div class="hero-glow"></div>
+        <div class="container">
+            <nav class="main-nav">
+                <div class="nav-brand">
+                    <span class="brand-glitch" data-text="BUKLIN.RS6">BUKLIN.RS6</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#rs6" class="nav-link">RS6</a></li>
+                    <li><a href="#game" class="nav-link">Игра</a></li>
+                    <li><a href="#moments" class="nav-link">Нарезки</a></li>
+                    <li><a href="#memes" class="nav-link">Мемы</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-glitch" data-text="AUDI RS6">AUDI RS6</span>
+                        <span class="title-sub">LEGENDARY BUKLIN EDITION</span>
+                    </h1>
+                    <p class="hero-desc">600+ лошадей • 3.6 секунды • 100% вайб</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-value">4.0 V8</div>
+                            <div class="stat-label">TWIN TURBO</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">621 л.с.</div>
+                            <div class="stat-label">POWER</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">305 км/ч</div>
+                            <div class="stat-label">MAX SPEED</div>
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="scrollToSection('rs6')">
+                        <span>ПОГНАЛИ!</span>
+                        <div class="button-glow"></div>
+                    </button>
+                </div>
+                <div class="hero-visual">
+                    <div class="audi-rs6-model">
+                        <div class="car-container">
+                            <img src="https://i.imgur.com/3Q7W4yE.png" alt="Audi RS6" class="audi-rs6">
+                            <div class="car-glow"></div>
+                        </div>
+                        <div class="road-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Секция RS6 -->
+    <section id="rs6" class="rs6-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🚗 AUDI RS6 AVANT</h2>
+                <p class="section-subtitle">Легенда, которую ты заслуживаешь</p>
+            </div>
+
+            <div class="rs6-details">
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <div class="spec-icon">⚡</div>
+                        <h3>Динамика</h3>
+                        <div class="spec-value">0-100: 3.6с</div>
+                        <p>Разгон до сотни быстрее, чем ты успеешь сказать "Буклин"</p>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-icon">🎯</div>
+                        <h3>Мощность</h3>
+                        <div class="spec-value">621 л.с.</div>
+                        <p>Достаточно, чтобы обогнать твои проблемы</p>
+                    </div>
+                    <div class="spec-card">
+                        <div class="spec-icon">🔥</div>
+                        <h3>Крутящий момент</h3>
+                        <div class="spec-value">850 Н·м</div>
+                        <p>Хватает, чтобы сдвинуть с места даже самый тяжелый арбуз</p>
+                    </div>
+                </div>
+
+                <div class="rs6-features">
+                    <div class="feature">
+                        <div class="feature-image">
+                            <img src="https://i.imgur.com/7Vn3k9a.jpeg" alt="RS6 Interior">
+                        </div>
+                        <div class="feature-content">
+                            <h3>Салон Мечты</h3>
+                            <p>Кожа Nappa, карбон, Alcantara - всё как у Булкина</p>
+                            <ul class="feature-list">
+                                <li>💺 Спортивные сиденья с массажем</li>
+                                <li>🎵 Bang & Olufsen 3D звук</li>
+                                <li>🌡 Климат-контроль 4-зонный</li>
+                                <li>📱 Virtual Cockpit Plus</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мини-игра -->
+    <section id="game" class="game-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎮 RS6 ШАШКИ</h2>
+                <p class="section-subtitle">Победи и получи ключи от легенды!</p>
+            </div>
+
+            <div class="game-container">
+                <div class="game-info">
+                    <div class="player-turn">
+                        <span>Ход: </span>
+                        <span id="currentPlayer">Игрок 1 (RS6)</span>
+                    </div>
+                    <div class="game-stats">
+                        <div class="stat">
+                            <div id="player1Score">12</div>
+                            <div>RS6</div>
+                        </div>
+                        <div class="stat">
+                            <div id="player2Score">12</div>
+                            <div>Арбузики</div>
+                        </div>
+                    </div>
+                    <button class="game-button" onclick="resetGame()">🔄 Новая игра</button>
+                    <button class="game-button" onclick="showRules()">📖 Правила</button>
+                </div>
+
+                <div class="game-board" id="gameBoard">
+                    <!-- Игровое поле генерируется через JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Легендарные моменты -->
+    <section id="moments" class="moments-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🎬 ЛЕГЕНДАРНЫЕ НАРЕЗКИ</h2>
+                <p class="section-subtitle">То, за чем все пришли</p>
+            </div>
+
+            <div class="moments-grid">
+                <div class="moment-card">
+                    <div class="moment-video">
+                        <div class="video-placeholder">
+                            <div class="play-button">▶</div>
+                            <img src="https://i.imgur.com/x3q7J8c.jpeg" alt="Арбузик момент">
+                        </div>
+                    </div>
+                    <div class="moment-content">
+                        <h3>"АРБУЗИК, НУ ТВОЮ Ж МАТЬ!"</h3>
+                        <p>Легендарный момент с арбузиком, который вошел в историю</p>
+                        <div class="moment-stats">
+                            <span>2.4M просмотров</span>
+                            <span class="watermelon-count">🍉🍉🍉</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="moment-card">
+                    <div class="moment-video">
+                        <div class="video-placeholder">
+                            <div class="play-button">▶</div>
+                            <img src="https://i.imgur.com/9sT4W2k.jpeg" alt="RS6 момент">
+                        </div>
+                    </div>
+                    <div class="moment-content">
+                        <h3>"RS6 ЗАВЕЛАСЬ - ДЕПРЕССИЯ ПРОШЛА"</h3>
+                        <p>Звук запуска двигателя, который лечит душу</p>
+                        <div class="moment-stats">
+                            <span>1.8M просмотров</span>
+                            <span class="audi-count">🚗🚗🚗</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мемы -->
+    <section id="memes" class="memes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📸 МЕМ-ГАЛЕРЕЯ</h2>
+                <p class="section-subtitle">Наследие Булкина в мемах</p>
+            </div>
+
+            <div class="memes-grid">
+                <div class="meme-card">
+                    <img src="https://i.imgur.com/K3p7v2s.jpeg" alt="Буклин мем 1">
+                    <div class="meme-caption">"Когда RS6 за 10 лямов, но арбузик за 100 рублей"</div>
+                </div>
+                <div class="meme-card">
+                    <img src="https://i.imgur.com/8v2n9q7.jpeg" alt="Буклин мем 2">
+                    <div class="meme-caption">"Мои финансы поют романсы, а RS6 - нет"</div>
+                </div>
+                <div class="meme-card">
+                    <img src="https://i.imgur.com/5wX4q9J.jpeg" alt="Буклин мем 3">
+                    <div class="meme-caption">"Арбузик: 100₽ | RS6: 10,000,000₽ | ВаЙб: бесценно"</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>BUKLIN LEGENDARY</h3>
+                    <p>RS6 × Арбузики × Наследие</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="social-link">YouTube</a>
+                    <a href="#" class="social-link">Twitch</a>
+                    <a href="#" class="social-link">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 BUKLIN RS6 LEGENDARY EDITION. Арбузики прилагаются.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Аудио контролы -->
+    <div class="audio-controls">
+        <button id="musicToggle" class="audio-btn">🎵</button>
+        <button id="engineToggle" class="audio-btn">🚗</button>
+    </div>
+
+    <!-- Модальное окно правил -->
+    <div id="rulesModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3>🎮 Правила RS6 Шашек</h3>
+            <div class="rules-list">
+                <div class="rule-item">
+                    <span class="rule-icon">🚗</span>
+                    <div class="rule-text">Игрок 1 ходит Audi RS6</div>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-icon">🍉</span>
+                    <div class="rule-text">Игрок 2 ходит Арбузиками</div>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-icon">⚡</span>
+                    <div class="rule-text">Ходить можно только по диагонали</div>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-icon">👑</span>
+                    <div class="rule-text">Дойдя до конца - стань королем!</div>
+                </div>
+                <div class="rule-item">
+                    <span class="rule-icon">🎯</span>
+                    <div class="rule-text">Цель - забрать все фишки противника</div>
+                </div>
+            </div>
+            <button class="cta-button" onclick="closeModal()">Понял, погнали!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
